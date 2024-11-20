@@ -27,16 +27,26 @@
       "image": "peach-mango.svg"
     },
     {
-      "name": "Rainbow Bliss",
+      "name": "Strawberry-sprinkle",
       "calories": 150,
       "type": "Fruit",
-      "image": "rainbow-bliss.svg"
+      "ingredients": [
+        "strawberry puree",
+        "blueberry jam",
+        "raspberry syrup"
+      ],
+      "image": "strawberry-sprinkle.svg"
     },
     {
-      "name": "Cosmic Crunch",
+      "name": "Salted Caramel Candy",
       "calories": 200,
       "type": "Candy",
-      "image": "cosmic-crunch.svg"
+      "ingredients": [
+        "peanut butter cups",
+        "chocolate chips",
+        "caramel sauce"
+      ],
+      "image": "ice-cream-xtra1.svg"
     }
   ]
 }
