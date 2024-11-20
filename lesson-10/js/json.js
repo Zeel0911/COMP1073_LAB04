@@ -8,7 +8,7 @@ async function populate() {
 
     // Introducing JavaScript Object Notation (JSON): https://json.org/
     // STEP 4: Store the URL of a JSON file in a variable */
-    const requestURL = './js/ice-cream.json'; 
+    const requestURL = './js/i-scream.json'; 
     
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(requestURL);
@@ -32,16 +32,16 @@ async function populate() {
 
 
 // STEP 3b: Call the populate() function
-
+populate();
 
 /* STEP 9b: Build out the populateHeader() function */
 function populateHeader() {
     // Create the H1 element
-    
+    const headrH1 = document.createElement("h1");
     // Grab the company name from the JSON object and use it for the text node
-    
+    headrH1.textContent = jsonObj.companyName;
     // Inject the complete H1 element into the DOM, inside the HEADER
-    
+    header.append(headrH1);
 };
 /* STEP 10b: Assemble the showTopFlavors() function */
 function showTopFlavors() {
