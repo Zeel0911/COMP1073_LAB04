@@ -62,15 +62,23 @@ function showTopFlavors(jsonObj) {
     image.setAttribute("src", "./images/" + topFlavors[i].image);
     pCalories.textContent = `Calories: ${topFlavors[i]["calories"]}`; // Display calories
         // STEP 10g: Build a loop for the ingredients array in the JSON
-        
-            // add the ingredient to the UL
+    let ingredients = topFlavors[i]["ingredients"];
+    for (let j = 0; j < ingredients.length; j++) {
+      let listItem = document.createElement("li");
+      listItem.textContent = ingredients[j];
+      ul.appendChild(listItem);
+    }
 
-        // STEP 10h: Append each of the above HTML elements to the ARTICLE element
-        
-        // STEP 10i: Append each complete ARTICLE element to the SECTION element
-        
-    };
-};
+    // STEP 10h: Append each of the above HTML elements to the ARTICLE element
+    article.appendChild(h2);
+    article.appendChild(image);
+    article.appendChild(pCalories); // Append the paragraph for calories
+    article.appendChild(ul);
+
+    // STEP 10i: Append each complete ARTICLE element to the SECTION element
+    section.appendChild(article);
+  }
+}
 // STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
 
 // STEP 12: Change the URL in STEP 3 to point to the JSON file in the local /js folder in order to prepare for today's lab
