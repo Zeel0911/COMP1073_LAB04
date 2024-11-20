@@ -2,7 +2,7 @@
 
 html {
 	box-sizing: border-box;
-  }
+}
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -13,48 +13,100 @@ body {
 	line-height: 1.4;
 	width: 80%;
 	margin: 0 auto;
+	background-color: #f8f0f9; /* Light pink background */
+	color: #4b007d; /* Dark purple text color for contrast */
 }
 
 /* header styles */
-
 h1 {
-  font-size: 3rem;
-  text-align: center;
+	font-size: 3rem;
+	text-align: center;
+	color: #ff69b4; /* Bright pink for the main title */
+	margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+	color: #800080; /* Rich purple for the description */
 }
 
 /* section styles */
 section {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap; /* Ensure responsiveness */
 	margin-bottom: 5rem;
 }
+
 section article {
-	border: 1px solid black;
-	box-shadow: 0 2px 14px grey;
+	border: 2px solid #ff69b4; /* Bright pink border for cards */
+	box-shadow: 0 2px 14px rgba(128, 0, 128, 0.5); /* Purple shadow */
 	padding: 2.5%;
 	width: 25%;
-	margin: 0 1%;
+	margin: 1%;
+	background-color: #ffffff; /* White background for cards */
+	border-radius: 10px; /* Rounded corners for a modern look */
+	transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
 }
+
+section article:hover {
+	transform: translateY(-10px); /* Lift card on hover */
+	box-shadow: 0 4px 20px rgba(255, 105, 180, 0.8); /* Bright pink shadow on hover */
+}
+
 article img {
 	display: block;
 	height: 150px;
 	width: 90px;
+	margin: 0 auto 10px; /* Center the image */
 }
+
 section p {
-  margin: 5px 0;
+	margin: 5px 0;
+	color: #4b007d; /* Dark purple text */
+	font-size: 1rem;
 }
 
 section ul {
-  margin-top: 0;
+	margin-top: 0;
+	padding-left: 20px;
 }
 
+section ul li {
+	color: #800080; /* Rich purple for list items */
+	font-size: 0.9rem;
+}
+
+/* Heading inside cards */
 h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+	font-size: 2rem;
+	margin-bottom: 10px;
+	color: #ff69b4; /* Bright pink for card titles */
+	text-align: center;
+}
+
+/* Footer styles */
+footer {
+	background-color: #800080; /* Rich purple background */
+	color: #ffffff; /* White text for contrast */
+	text-align: center;
+	padding: 1rem 0;
+	margin-top: 2rem;
+	border-top: 5px solid #ff69b4; /* Bright pink border at the top */
+}
+
+footer a {
+	color: #ff69b4; /* Bright pink for links */
+	text-decoration: none;
+	font-weight: bold;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer p {
+	margin: 0.5rem 0;
 }
